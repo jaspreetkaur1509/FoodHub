@@ -1,0 +1,554 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    /* border: 1px solid black; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5vw;
+}
+
+#nav2 {
+    color: wheat;
+    display: flex;
+    gap: 4vw;
+    padding: 0 2.6vw;
+}
+
+.nav h1 {
+    font-size: 1.9vw;
+    font-weight: 600;
+}
+
+.nav h1 span {
+    color: crimson;
+}
+
+#nav2 button {
+    font-size: 1vw;
+    padding: 0.6vw 1.4vw;
+    background-color: crimson;
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+#nav2 h3 {
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 0.5vw 0;
+}
+
+
+.nav i {
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+
+/* background image 1 */
+#bgimage {
+    background-image: url(foodImages/g1.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    text-align: center;
+}
+
+#image h1 {
+    font-size: 5vw;
+    color: black;
+    padding: 0.6vw 0;
+}
+
+#image p {
+    font-size: 2.2vw;
+    padding: 0.6vw 0;
+}
+
+#image h1 span {
+    color: darkgreen;
+}
+
+/* background image 2 */
+#bgimage2 {
+    background-image: url(foodImages/F1.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image1 {
+    text-align: center;
+}
+
+#image1 p {
+    font-size: 3.7vw;
+}
+
+/* three div parts */
+
+#gparent {
+    display: flex;
+    padding: 2vw;
+}
+
+#parent {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.card {
+    width: 25%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px black;
+}
+
+.setimage {
+    width: 20vw;
+    margin: auto;
+}
+
+.card p {
+    width: 75%;
+    font-size: 1.4vw;
+    font-weight: lighter;
+    margin-left: 10%;
+    text-align: center;
+    word-spacing: 10px;
+    /* border: 1px solid black; */
+}
+
+/* add black image */
+.black {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+.jas {
+    width: 50%;
+    display: flex;
+}
+
+.cake {
+    height: 80%;
+    width: 60%;
+    margin: auto;
+}
+
+.order {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 90%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.order h1 {
+    font-size: 6vw;
+    font-weight: 900;
+}
+
+.order p {
+    font-size: 3vw;
+    padding: 2vw 2vw;
+}
+
+/* counting calories */
+
+#fruits {
+    background-image: url(foodImages/j3.jpeg);
+    height: 60vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#container1 {
+    text-align: center;
+    color: darkgreen;
+    width: 50vw;
+}
+
+#container1 h1 {
+    font-size: 5.5vw;
+}
+
+#container1 p {
+    font-size: 2.6vw;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #53A0B1;
+    color: #ffff;
+}
+
+.container {
+    width: 30%;
+    padding: 0 6vw;
+    text-align: right;
+}
+
+.container h2 {
+    font-size: 2.5vw;
+    font-weight: 700;
+    padding: 1.3vw 0;
+    color: crimson;
+}
+
+.container p {
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+
+/* Media Query for Tab*/
+@media (max-width:1024px) {
+
+    /* Navigation bar */
+    .nav h1 {
+        font-size: 2.5vw;
+        font-weight: 800;
+        padding: 0 2.5vw;
+    }
+
+    #nav2 {
+        padding: 0 4.5vw;
+    }
+
+    #nav2 h3 {
+        font-size: 1.8vw;
+        font-weight: 800;
+        padding: 1.1vw 0;
+        display: none;
+    }
+
+    #nav2 button {
+        font-size: 1.7vw;
+        padding: 0.7vw 1.5vw;
+        border-radius: 0.9vw;
+        border: 0.5vw solid crimson;
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 4.5vw;
+    }
+
+
+    /* background image 1 */
+    #bgimage {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: 100%;
+    }
+
+    #bgimage h1 {
+        font-size: 7vw;
+        font-weight: 800;
+        padding: 0.5vw 0;
+    }
+
+    #bgimage p {
+        font-size: 3.5vw;
+        padding: 0.5vw 0;
+    }
+
+    /* background image 2 */
+    #bgimage2 {
+        background-size: cover;
+        background-position: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    #image1 p {
+        font-size: 4.8vw;
+        font-weight: 800;
+    }
+
+    #parent {
+        display: flex;
+    }
+
+    /* three div parts */
+    #parent {
+        width: 100%;
+    }
+
+    .card p {
+        width: 78%;
+        font-size: 1.5vw;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    /* add black image */
+    .jas {
+        width: 50%;
+    }
+
+    .order h1 {
+        font-size: 6vw;
+        font-weight: 800;
+    }
+
+    .order p {
+        font-size: 3.1vw;
+        font-weight: 800;
+    }
+
+    /* counting calories */
+    #container1 {
+        text-align: center;
+        padding-left: 2.3vw;
+        color: darkgreen;
+        /* width: 50vw; */
+    }
+
+    #container1 h1 {
+        font-size: 6vw;
+        font-weight: 800;
+    }
+
+    #container1 p {
+        font-size: 4vw;
+        font-weight: 800;
+    }
+
+    /* footer */
+    .footer {
+        height: 50vh;
+    }
+
+    .container h2 {
+        font-size: 4.2vw;
+        font-weight: 800;
+    }
+
+    .container p {
+        font-size: 1.6vw;
+        font-weight: 800;
+    }
+}
+
+/* Media Query for Mobile phone*/
+@media (max-width:500px) {
+
+    /* Navigation bar */
+    .nav {
+        height: 93px;
+    }
+
+    .nav h1 {
+        padding: 0 2.5vw;
+        font-size: 3.3vw;
+        font-weight: 800;
+    }
+
+    #nav2 {
+        padding: 0 4vw;
+    }
+
+    #nav2 h3 {
+        font-size: 2.1vw;
+        font-weight: 800;
+        display: none;
+    }
+
+    #nav2 button {
+        font-size: 2.1vw;
+        font-weight: 800;
+        border-radius: 1.6vw;
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 4.5vw;
+    }
+
+    /* background image 1 */
+    #bgimage {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: 100%;
+    }
+
+    #bgimage h1 {
+        font-size: 8vw;
+        font-weight: 800;
+        padding: 0.5vw 0;
+    }
+
+    #bgimage p {
+        font-size: 4vw;
+        padding: 0.5vw 0;
+    }
+
+    /* background image 2 */
+    #bgimage2 {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: 100%;
+    }
+
+    #image1 p {
+        font-size: 6.1vw;
+        font-weight: 800;
+    }
+
+    /* three div parts */
+    #parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        margin: 4vw 0;
+        height: 100%;
+        width: 35vw;
+    }
+
+    .card p {
+        font-size: 2vw;
+        font-weight: 700;
+        text-align: center;
+    }
+    .setimage{
+        width: 30vw;
+    }
+
+    /* add black image */
+    .black {
+        height: 75vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jas {
+        width: 75%;
+        height: 65%;
+    }
+    .text{
+        width: 100vw;
+    }
+    .order{
+        width: 80vw;
+    }
+    .order h1 {
+        font-size: 7.7vw;
+        font-weight: 800;
+        padding: 3vw 0;
+    }
+
+    .order p {
+        font-size: 3.2vw;
+        font-weight: 800;
+    }
+
+    /* counting calories */
+    #fruits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container1 {
+        text-align: center;
+        padding-left: 2.5vw;
+
+    }
+
+    #container1 h1 {
+        font-size: 7vw;
+        font-weight: 800;
+    }
+
+    #container1 p {
+        font-size: 5vw;
+        font-weight: 800;
+    }
+
+    /* footer */
+    .footer {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .container h2 {
+        font-size: 6vw;
+        font-weight: 800;
+        padding: 2vw 0;
+    }
+
+    .container p {
+        font-size: 4vw;
+        font-weight: 800;
+    }
+}
